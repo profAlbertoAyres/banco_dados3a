@@ -4,7 +4,7 @@ final class Database{
     private static $instance = null;
     private $connection;
 
-    private function __constructor(){
+    private function __construct(){
         try {
             $config = parse_ini_file(__DIR__."/../config.ini", true)["database"];
             $dns="";
