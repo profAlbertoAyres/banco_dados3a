@@ -28,7 +28,10 @@
   </div>
 
   <div class="mt-4">
-    <table class="table">
+    <div class="mb-3">
+      <input type="text" name="campo-filtro" id="campo-filtro" class="form-control" placeholder="🔍 Digite para filtrar" title="Digita para filtrar pelo nome do exercício">
+    </div>
+    <table class="table" id="tabela-exercicios">
       <thead>
         <tr class="table-warning">
           <th class="text-center">#</th>
@@ -41,7 +44,7 @@
             foreach ($exercicios as $exerc):
         ?>
         <tr>
-          <td class="text-center">1</td>
+          <td class="text-center"><?= $exerc->idexercicio ?></td>
           <td><?php echo $exerc->nome ?></td>
           <td class="text-center">
             <a href="#" class="btn btn-sm btn-outline-info">
@@ -63,6 +66,7 @@
     
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="js/tb-interativa.js"></script>
+<script src="js/exercicios.js"></script>
 </body>
 </html>
