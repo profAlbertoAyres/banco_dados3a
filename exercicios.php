@@ -61,6 +61,9 @@
         <?php endforeach ?>
       </tbody>
     </table>
+    <div id="msg-vazio" class="d-flex justify-content-center alert alert-info p-3 d-none">
+      <i class="bi bi-info-circle mx-2"></i> Nenhum exercício encontrado para o filtro digitado.
+    </div>
   </div>
 </main>
     
