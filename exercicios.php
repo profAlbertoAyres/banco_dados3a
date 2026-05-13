@@ -50,7 +50,7 @@
             <a href="#" class="btn btn-sm btn-outline-info">
               <i class="bi bi-eye"></i>
             </a>
-            <a href="#" class="btn btn-sm btn-outline-secondary">
+            <a href="ger-exercicio.php?id=<?= $exerc->idexercicio ?>" class="btn btn-sm btn-outline-secondary">
               <i class="bi bi-pencil-square"></i>
             </a>
             <a href="#" class="btn btn-sm btn-outline-danger">
